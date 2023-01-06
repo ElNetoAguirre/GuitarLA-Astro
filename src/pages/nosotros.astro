@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro"
+import nosotros from "../img/nosotros.jpg"
+---
+
+<Layout title="Nosotros" description="Autor: Ernesto Aguirre, Descripción: Proyecto GuitarLA - Página de instrumentos musicales, guitarras, cursos, blog, y más">
+	<main class="contenedor">
+		<h1 class="heading">Nosotros</h1>
+		
+    <div class="contenido">
+      <img src={nosotros} alt="Imagen sobre nosotros">
+
+      <div>
+        <p>Nullam sed lectus maximus, dapibus velit ac, placerat dolor. Curabitur sit amet ex vel elit iaculis dapibus id eget dui. In lobortis purus quis odio fermentum ultricies. Phasellus non nisl a dui aliquam hendrerit. Suspendisse dolor felis, pretium ut risus tincidunt, cursus imperdiet urna. Mauris tempor dictum mi, nec tempus tortor iaculis et. Aliquam ut rhoncus lectus.</p>
+
+        <p>Nullam sed lectus maximus, dapibus velit ac, placerat dolor. Curabitur sit amet ex vel elit iaculis dapibus id eget dui. In lobortis purus quis odio fermentum ultricies. Phasellus non nisl a dui aliquam hendrerit. Suspendisse dolor felis, pretium ut risus tincidunt, cursus imperdiet urna. Mauris tempor dictum mi, nec tempus tortor iaculis et. Aliquam ut rhoncus lectus.</p>
+      </div>
+    </div>
+	</main>
+</Layout>
+
+<style>
+	.contenido {
+    display: grid;
+    gap: 4rem;
+  }
+  @media (min-width: 768px) {
+    .contenido {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+  }
+</style>
